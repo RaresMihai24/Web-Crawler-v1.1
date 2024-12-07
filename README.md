@@ -23,6 +23,7 @@ Approximately ~1h45
 
 # Usage:
 $ python -m uvicorn main:app --reload
+
 Open a web browser and navigate to http://localhost:8000
 to start using the web crawler and view the results.
 ##########################################################################
