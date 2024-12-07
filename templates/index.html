@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Spidy</title>
+</head>
+<body>
+
+<div class="main-layout">
+	<div class="container">
+		<h1>Spidy</h1>
+	    <form id="crawl-form">
+	        <label for="url">Start URL:</label>
+	        <input type="url" id="url" name="url" required value="https://pentest-tools.com"><br><br>
+
+	        <label for="max_depth">Max Depth:</label>
+	        <input type="number" id="max_depth" name="max_depth" value="0"><br><br>
+
+	        <label for="rate_limit">Request Rate Limit:</label>
+	        <input type="number" id="rate_limit" name="rate_limit" value="10" step="0.1" min="0.1"><br><br>
+
+	        <input type="submit" value="Start Crawl">
+	        <button type="button" id="stop-crawl">Stop Crawl</button>
+	    </form>
+	</div>
+
+	<div id="tree-container"></div>
+</div>
+
+<script src="{{ url_for('static', filename='scripts.js') }}"></script>
+
+</body>
+</html>
