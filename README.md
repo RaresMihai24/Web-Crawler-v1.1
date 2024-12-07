@@ -1,11 +1,5 @@
 # Web-Crawler-v1.1
 
-Author: America779
-Date: August 16, 2024
-Version: 1.1
-Email: rares.mihai1@yahoo.com
-Project: Web Crawler and Tree Viewer
-
 # Description:
 This script is designed to crawl web pages starting from a given URL 
 and visualize the crawled URLs in a tree structure.
